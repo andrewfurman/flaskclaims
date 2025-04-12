@@ -1,0 +1,32 @@
+
+{% extends "header.html" %}
+{% block content %}
+<div class="container mx-auto px-4 py-8">
+    <div class="bg-white rounded-lg shadow-lg p-6">
+        <h1 class="text-3xl font-bold text-gray-800 mb-4">Welcome to Healthcare Management</h1>
+        <p class="text-gray-600 mb-6">Select a category from the navigation menu to get started.</p>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+            <div class="bg-blue-50 p-4 rounded-lg">
+                <h2 class="text-xl font-semibold text-blue-700">🛡️ Plans</h2>
+                <p class="text-gray-600 mt-2">Manage insurance plans and coverage options</p>
+            </div>
+            
+            <div class="bg-green-50 p-4 rounded-lg">
+                <h2 class="text-xl font-semibold text-green-700">👩‍⚕️ Providers</h2>
+                <p class="text-gray-600 mt-2">Manage healthcare providers and facilities</p>
+            </div>
+            
+            <div class="bg-purple-50 p-4 rounded-lg">
+                <h2 class="text-xl font-semibold text-purple-700">🪪 Members</h2>
+                <p class="text-gray-600 mt-2">Manage member information and benefits</p>
+            </div>
+            
+            <div class="bg-orange-50 p-4 rounded-lg">
+                <h2 class="text-xl font-semibold text-orange-700">🧾 Claims</h2>
+                <p class="text-gray-600 mt-2">Process and manage insurance claims</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
