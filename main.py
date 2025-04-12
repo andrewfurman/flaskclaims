@@ -1,11 +1,8 @@
-from flask import Flask, render_template
+from flask import Flask
+from login.login_routes import login_bp
 
 app = Flask(__name__)
-
-
-@app.route('/')
-def index():
-    return render_template('welcome.html')
+app.register_blueprint(login_bp)
 
 if __name__ == '__main__':
-  app.run(host='0.0.0.0', port=5000)
+    app.run(host='0.0.0.0', port=5000)
