@@ -1,0 +1,22 @@
+
+{% extends "header.html" %}
+{% block content %}
+<div class="container mx-auto px-4 py-8">
+    <div class="bg-white rounded-lg shadow-lg p-6">
+        <h1 class="text-3xl font-bold text-gray-800 mb-4">Insurance Plans</h1>
+        <p class="text-gray-600 mb-6">View and manage insurance plans</p>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="border p-4 rounded-lg">
+                <h2 class="text-xl font-semibold text-blue-700">Basic Plan</h2>
+                <p class="text-gray-600 mt-2">Standard coverage for essential healthcare needs</p>
+            </div>
+            
+            <div class="border p-4 rounded-lg">
+                <h2 class="text-xl font-semibold text-blue-700">Premium Plan</h2>
+                <p class="text-gray-600 mt-2">Enhanced coverage with additional benefits</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
