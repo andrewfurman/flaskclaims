@@ -1,0 +1,21 @@
+{% extends "header.html" %}
+{% block content %}
+<div class="container mx-auto px-4 py-8">
+    <div class="bg-white rounded-lg shadow-lg p-6">
+        <h1 class="text-3xl font-bold text-gray-800 mb-4">Insurance Claims</h1>
+        <p class="text-gray-600 mb-6">View and manage insurance claims</p>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="border p-4 rounded-lg">
+                <h2 class="text-xl font-semibold text-blue-700">Active Claims</h2>
+                <p class="text-gray-600 mt-2">Currently processing insurance claims</p>
+            </div>
+            
+            <div class="border p-4 rounded-lg">
+                <h2 class="text-xl font-semibold text-blue-700">Claim History</h2>
+                <p class="text-gray-600 mt-2">Past claims and their status</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
